@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title> PRODIGY_WD_05 </title>
+
+    <meta name="viewport" content= "width=device-width, initial-scale=1.0"> 
+    <link rel = "stylesheet" type = "text/css" href = "index.css">
+
+</head>
+
+<body>
+
+    <nav>
+        <img src = "Prodigy_InfoTech_Logo.jpg">
+    </nav>
+
+    <div class = "weather">
+
+        <div class = "row">
+
+            <button class = "button" onclick = "GetLocation()"> Get Location </button>
+
+        </div>
+
+        <div class = "row">
+
+            <label for = "latitude"> Latitude </label>
+            <input type = "text/json" id = "latitude">
+            
+        </div>
+
+        <div class = "row">
+
+            <label for = "longitude"> Longitude </label>
+            <input type = "text/json" id = "longitude">
+            
+        </div>
+
+    </div>
+
+    <button class = "button" onclick = "Submit()"> Submit </button>
+
+    <div class = "weather" style = "margin-top: 2vh;"></div>
+
+        <div class = "row">
+
+            <label for = "location"> Location </label>
+            <input type = "text/json" id = "location" readonly>
+            
+        </div>
+
+        <div class = "row">
+
+            <label for = "localtime"> Local Time </label>
+            <input type = "text/json" id = "localtime" readonly>
+            
+        </div>
+
+        <div class = "row">
+
+            <label for = "temperature"> Temperature (°C) </label>
+            <input type = "text/json" id = "temperature" readonly>
+            
+        </div>
+
+        <div class = "row">
+
+            <label for = "condition"> Condition </label>
+            <input type = "text/json" id = "condition" readonly style = "width: 15vw">
+            <input id = "condition_img" value = "" style = "width: 12vw;" readonly>
+            
+        </div>
+
+        <div class = "row">
+
+            <label for = "windspeed"> Wind Speed (mph) </label>
+            <input type = "text/json" id = "windspeed" readonly>
+            
+        </div>
+
+        <div class = "row">
+
+            <label for = "winddirection"> Wind Direction </label>
+            <input type = "text/json" id = "winddirection" readonly>
+            
+        </div>
+
+        <div class = "row">
+
+            <label for = "precipitation"> Precipitation (mm) </label>
+            <input type = "text/json" id = "precipitation" readonly>
+            
+        </div>
+
+        <div class = "row">
+
+            <label for = "humidity"> Humidity </label>
+            <input type = "text/json" id = "humidity" readonly>
+            
+        </div>
+
+    </div>
+
+    <button class = "button" onclick = "Reset()"> Reset </button>
+
+    <br><br>
+
+    <script src = "index.js"></script>
+
+</body>
+
+</html>
